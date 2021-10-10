@@ -1,0 +1,44 @@
+body.light{
+    background-color: var(--light-bg-colour);
+    color: var(--light-primary-text-colour);
+}
+
+body.light .header{
+    background-color: var(--light-bg-colour);
+}
+
+body.light .nav-bar{
+    border-bottom: 1px solid var(--light-secondary-text-colour);
+}
+
+body.light .hamburger > span{
+    background-color: var(--light-primary-text-colour);
+}
+
+body.light .myImage{
+    border: 2px solid var(--light-secondary-text-colour);
+}
+
+body.light .nav-item div{
+    background-color: var(--light-secondary-text-colour);
+}
+
+body.light .nav-item a{
+    color: var(--light-primary-text-colour);
+}
+
+body.light .nav-menu{
+    background: var(--light-bg-colour);
+}
+
+body.light .next-slide svg{
+    fill: var(--light-secondary-text-colour);
+}
+
+body.light .contact-info > p:first-of-type{
+    color: var(--light-secondary-text-colour);
+}
+
+body.light .resume svg{
+    fill: var(--light-secondary-text-colour);
+}

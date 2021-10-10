@@ -35,6 +35,10 @@ body.light .next-slide svg{
     fill: var(--light-secondary-text-colour);
 }
 
+body.light .project-info{
+    color: var(--dark-primary-text-colour);
+}
+
 body.light .contact-info > p:first-of-type{
     color: var(--light-secondary-text-colour);
 }

@@ -9,6 +9,15 @@
     --red-colour: #E17268;
 }
 
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
 body{
     position: relative;
     font-family: 'Montserrat', sans-serif;
@@ -103,12 +112,17 @@ body{
     margin: 1rem;
 }
 
+.nav-item a:hover{
+    color: var(--dark-secondary-text-colour);
+}
+
 .theme-icon{
     width: 35px;
     height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .material-icons{
@@ -151,6 +165,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .socials svg{
@@ -288,6 +303,7 @@ body{
     height: 3rem;
     border: none;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .project-link:first-of-type{
@@ -299,6 +315,18 @@ body{
     height: 1.5rem;
     fill: var(--dark-bg-colour);
     margin-top: 3px;
+}
+
+.contacts > h2, .contacts > p{
+    margin: 0;
+}
+
+.contacts > h2{
+    margin-bottom: 1rem;
+}
+
+.contacts > p{
+    margin-bottom: .3rem;
 }
 
 .contact-socials{
@@ -321,6 +349,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-right: 1rem;
+    cursor: pointer;
 }
 
 .contact svg{
@@ -338,6 +367,16 @@ body{
     font-weight: 700;
 }
 
+.contact-info > a{
+    color: var(--dark-primary-text-colour);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contact-info > a:hover{
+    color: var(--dark-secondary-text-colour);
+}
+
 .resume{
     margin-top: 2rem;
     display: flex;
@@ -349,8 +388,9 @@ body{
     width: 4.5rem;
     border: none;
     border-radius: 15px;
-    margin-left: 8px;
+    margin-left: .6rem;
     background-color: var(--dark-primary-text-colour);
+    cursor: pointer;
 }
 
 .resume svg{
@@ -375,6 +415,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     animation: bounce 1s infinite alternate;
 }
 
@@ -393,6 +434,10 @@ body{
 }
 
 @media only screen and (min-width: 48rem){
+    html{
+        font-size: 130%;
+    }
+
     .logo{
         margin-left: 2rem;
     }
@@ -423,6 +468,7 @@ body{
         left: 0;
         top: 0;
         background-color: transparent;
+        height: 0;
     }
 
     .nav-menu li a {
@@ -434,7 +480,43 @@ body{
         display: none;
     }
 
+    .main-page{
+        height: 100vh;
+    }
+
+    .about-me, .projects, .contacts{
+        padding: 2.5rem;
+    }
+
+    .description span{
+        text-align: center;
+        display: block;
+    }
+
     .socials{
         width: 45%;
+    }
+
+    .projects-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1.5rem;
+    }
+
+    .contact-socials{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1.5rem;
+    }
+
+    .resume{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .resume button{
+        margin-left: 1.2rem;
     }
 }

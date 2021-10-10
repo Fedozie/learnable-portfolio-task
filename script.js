@@ -1,7 +1,8 @@
 const menuBtn = document.querySelector(".hamburger");
 const navMenu = document.querySelector('.nav-menu');
 const themeIcon = document.querySelector('.theme-icon');
-const icon = document.querySelector('.material-icons')
+const icon = document.querySelector('.material-icons');
+const buttons = document.querySelectorAll('button');
 
 //Event Listener for toggling menu bar on mobile devices
 menuBtn.addEventListener('click', () => {

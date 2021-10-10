@@ -43,6 +43,14 @@ body.light .contact-info > p:first-of-type{
     color: var(--light-secondary-text-colour);
 }
 
+body.light .contact-info > a{
+    color: var(--light-primary-text-colour);
+}
+
+body.light .contact-info > a:hover{
+    color: var(--dark-secondary-text-colour);
+}
+
 body.light .resume svg{
     fill: var(--light-secondary-text-colour);
 }

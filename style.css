@@ -434,6 +434,13 @@ body{
     display: none;
 }
 
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @keyframes bounce{
     0%{
         transform: translateY(10px);
